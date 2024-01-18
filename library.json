@@ -1,0 +1,26 @@
+{
+  "name": "TFT eSPI Scroll",
+  "version": "1.0.0",
+  "description": "Adds text scroll functionality to TFT eSPI library",
+  "keywords": "TFT eSPI Scroll",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/aniket-hpp/TFT_eSPI_Scroll.git"
+  },
+  "authors":
+  [
+    {
+      "name": "Aniket Biswas",
+      "email": "contact.aniket.biswas@gmail.com",
+      "url": "https://github.com/aniket-hpp"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/aniket-hpp/TFT_eSPI_Scroll",
+  "dependencies": {
+    "bodmer/TFT_eSPI": "~2.5.43"
+},
+  "frameworks": "*",
+  "platforms": "*"
+}
