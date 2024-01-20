@@ -10,7 +10,6 @@
 #include <Arduino.h>
 #include <TFT_eSPI.h>
 #include "./TFT_eSPI_Scroll.h"
-#include "../include/colors/1bit.h"
 
 // Constructor
 TFT_eSPI_Scroll::TFT_eSPI_Scroll(){

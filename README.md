@@ -16,8 +16,6 @@ TFT_eSPI_Scroll library provides the following header files that can be included
 
 ```cpp
 #include <TFT_eSPI_Scroll.h>
-#include <colors/1bit.h>
-#include <colors/4bit.h>
 ```
 
 # Usage
@@ -84,12 +82,10 @@ void loop(){
 // bg & fg {8-bit}
 scroll.setColor(TFT_BLUE, TFT_YELLOW);
 
-// bg & fg {4-bit}
-#include <colors/4bit.h>
+// bg & fg {4-bit} COLOR_<name>_4B
 scroll.setColor(COLOR_BLUE_4B, COLOR_YELLOW_4B);
 
-// bg & fg {1-bit}
-#include <colors/1bit.h>
+// bg & fg {1-bit} COLOR_<name>_1B
 scroll.setColor(COLOR_WHITE_1B, COLOR_BLACK_1B);
 ```
 
