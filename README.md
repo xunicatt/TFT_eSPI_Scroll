@@ -33,7 +33,8 @@ TFT_eSPI_Scroll scroll;
 
 ### Initialization:-
 
-**Note it is important to initialize the "TFT_eSPI" library before using "TFT_eSPI_Scroll".**
+>[!WARNING]
+>Note it is important to initialize the "TFT_eSPI" library before using "TFT_eSPI_Scroll".
 
 Using this method the "TFT_eSPI_Scroll" library initializes in 1-bit color-depth mode. Only black and white color is available in this color-depth. Though 1-bit color-depth is limited to B/W colors, it is not only fast but also memory efficient and renders without any flickering or glitches.
 
@@ -76,7 +77,8 @@ void loop(){
 
 ### Changing the background & foreground color:-
 
-**Note in order to apply proper colors (excluding 1-Bit default), proper color-depth must be selected during initialization.**
+>[!WARNING]
+>Note in order to apply proper colors (excluding 1-Bit default), proper color-depth must be selected during initialization.
 
 ```cpp
 // bg & fg {8-bit}
