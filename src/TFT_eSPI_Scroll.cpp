@@ -8,7 +8,7 @@
 */
 
 #include <TFT_eSPI.h>
-#include "../include/TFT_eSPI_Scroll.h"
+#include "./TFT_eSPI_Scroll.h"
 #include "../include/colors/1bit.h"
 
 // Constructor
