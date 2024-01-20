@@ -18,6 +18,9 @@
 #include <Arduino.h>
 #include <TFT_eSPI.h>
 
+#include "./colors/1bit.h"
+#include "./colors/4bit.h"
+
 #define TFT_eSPI_Scroll_Version "1.0.2"
 
 /*
