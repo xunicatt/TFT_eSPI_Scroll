@@ -52,15 +52,15 @@ void setup(){
 
 To set other color-depths, intialize the library with: 
 ```cpp
-    // previous codes
+// previous codes
 
-    int colorDepth = 4; // 4-bit color depth
+int colorDepth = 4; // 4-bit color depth
 
-    if(scroll.init(&tft, textFont, colorDepth) != NO_ERROR){
-        // memory allocation failed
-    }
+if(scroll.init(&tft, textFont, colorDepth) != NO_ERROR){
+    // memory allocation failed
+}
 
-    // rest of the code
+// rest of the code
 ```
 
 
