@@ -1,5 +1,5 @@
 # TFT_eSPI_Scroll
-TFT_eSPI Scroll library adds text scroll functionality to the existing [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI/) library. This library by default uses 1-bit color-depth which makes it perform very fast & flickerless with very minimum ram usages. The color-depth can be changed accordingly to match required performances. This library supports all the processors that [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI/) library supports.
+TFT_eSPI_Scroll library adds text scroll functionality to the existing [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI/) library. This library by default uses 1-bit color-depth which makes it perform very fast & flickerless with very minimum ram usages. The color-depth can be changed accordingly to match required performances. This library supports all the processors that [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI/) library supports.
 
 # Installation
 
@@ -33,7 +33,7 @@ TFT_eSPI_Scroll scroll;
 
 ### Initialization:-
 
-**Note it is important to initialize the "TFT_eSPI" library before using "TFT_eSPI_Scroll".
+**Note it is important to initialize the "TFT_eSPI" library before using "TFT_eSPI_Scroll".**
 
 Using this method the "TFT_eSPI_Scroll" library initializes in 1-bit color-depth mode. Only black and white color is available in this color-depth. Though 1-bit color-depth is limited to B/W colors, it is not only fast but also memory efficient and renders without any flickering or glitches.
 
@@ -67,7 +67,7 @@ if(scroll.init(&tft, textFont, colorDepth) != NO_ERROR){
 ### Writing to display:-
 
 ```cpp
-int count  = 0;
+int count = 0;
 
 void loop(){
     scroll.write("Count: " + String(count++));
@@ -76,7 +76,7 @@ void loop(){
 
 ### Changing the background & foreground color:-
 
-**Note in order to apply proper colors (excluding 1-Bit default), proper color-depth must be selected during initialization. 
+**Note in order to apply proper colors (excluding 1-Bit default), proper color-depth must be selected during initialization.**
 
 ```cpp
 // bg & fg {8-bit}
