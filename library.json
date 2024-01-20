@@ -1,26 +1,26 @@
 {
-  "name": "TFT eSPI Scroll",
-  "version": "1.0.0",
-  "description": "Adds text scroll functionality to TFT eSPI library",
-  "keywords": "TFT eSPI Scroll",
+  "name": "TFT_eSPI_Scroll",
+  "version": "1.0.2",
+  "description": "Adds flickerless text scrolling functionality to TFT eSPI library",
+  "keywords": "Arduino, tft, display, ttgo, LilyPi, WT32-SC01, ePaper, display, Pico, RP2040 Nano Connect, RP2040, STM32, ESP8266, NodeMCU, ESP32, M5Stack, ILI9341, ST7735, ILI9163, S6D02A1, ILI9481, ILI9486, ILI9488, ST7789, ST7796, RM68140, SSD1351, SSD1963, ILI9225, HX8357D, GC9A01, R61581",
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/aniket-hpp/TFT_eSPI_Scroll.git"
+    "url": "https://github.com/aniket-hpp/TFT_eSPI_Scroll"
   },
   "authors":
   [
     {
       "name": "Aniket Biswas",
       "email": "contact.aniket.biswas@gmail.com",
-      "url": "https://github.com/aniket-hpp"
+      "maintainer": true
     }
   ],
   "license": "MIT",
-  "homepage": "http://github.com/aniket-hpp/TFT_eSPI_Scroll",
   "dependencies": {
     "bodmer/TFT_eSPI": "~2.5.43"
 },
-  "frameworks": "*",
-  "platforms": "*"
+  "frameworks": "arduino",
+  "platforms": "raspberrypi, espressif8266, espressif32, ststm32",
+  "headers": "TFT_eSPI_Scroll.h, colors/1bit.h, colors/4bit.h"
 }

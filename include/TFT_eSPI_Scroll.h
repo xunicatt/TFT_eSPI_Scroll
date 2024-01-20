@@ -18,6 +18,19 @@
 #include <Arduino.h>
 #include <TFT_eSPI.h>
 
+#define TFT_eSPI_Scroll_Version "1.0.2"
+
+/*
+**  Error Handeling
+**  Returns NO_ERROR if everthing is ok
+*/
+enum TFT_eSPI_Scroll_Error{
+    NO_ERROR,
+    ERROR_NO_TFT,
+    ERROR_SPRITE_MEMORY_ALLOCATION_FAILED
+};
+
+
 /*
 ** TFT_eSPI_Scroll
 ** Enables text scrolling
@@ -33,25 +46,34 @@ public:
 
     /*
     ** @name init
-    ** @brief Initializes the class with neccessary datas
+    ** @brief Initializes the class with neccessary datas.
+    ** @brief It is recommended to use default 1-bit color_depth [B/W] for flickerless screen refresh & low ram usage
     ** @param TFT_eSPI*
     ** @param text_font
-    ** @param background_color
-    ** @param foreground_color
+    ** @param color_depth
     */
-    void init(TFT_eSPI *tft_espi, uint16_t font_height, uint16_t background_color = TFT_BLACK, uint16_t foreground_color = TFT_WHITE);
+    TFT_eSPI_Scroll_Error init(TFT_eSPI *tft_espi, uint16_t text_font, uint8_t color_depth = 1);
     
     /*
     ** @name write
     ** @brief Writes a line to the screen while scrolling.
     ** @param text
     */
-    void write(String text);
+    TFT_eSPI_Scroll_Error write(String text);
+
+    /*
+    ** @name setColor
+    ** @brief Sets an background and foreground color
+    ** @brief It is recommended to use default 1-bit color settings [B/W] for flickerless screen refresh & low ram usage.
+    ** @brief Color depth must be set accordingly.
+    ** @param background_color
+    ** @param foreground_color
+    */
+    void setColor(uint16_t background_color, uint16_t forground_color);
 
     /*
     ** @name reset
     ** @brief Resets configs, init must be called 
-    ** @param text
     */ 
     void reset();
 
@@ -65,7 +87,8 @@ private:
     //stroing the lines in display 
     std::vector<String> buffer;
     TFT_eSPI *tft; //tft_espi display driver
-    uint16_t bg_color; //background color
+    TFT_eSprite *sprite; //sprite for flicker less update
+    uint16_t bg_color;
 };
 
 #endif
