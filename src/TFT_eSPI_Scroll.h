@@ -1,6 +1,6 @@
 /*
 **  Author: Aniket Biswas
-**  Github: https://github.com/aniket-hpp
+**  Github: https://github.com/xunicatt
 **  
 **  Library to add Vertical text Scrolling functionality to TFT_eSPI library by bodmer.
 **  TFT_eSPI: https://github.com/Bodmer/TFT_eSPI
@@ -17,11 +17,12 @@
 
 #include <Arduino.h>
 #include <TFT_eSPI.h>
+#include <vector>
 
 #include "./1bit.h"
 #include "./4bit.h"
 
-#define TFT_eSPI_Scroll_Version "1.0.3"
+#define TFT_eSPI_Scroll_Version "1.0.4"
 
 /*
 **  Error Handeling

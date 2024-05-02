@@ -3,12 +3,19 @@ TFT_eSPI_Scroll library adds text scroll functionality to the existing [TFT_eSPI
 
 # Installation
 
+### Platform IO:
 1. Open `platformio.ini`, a project configuration file located in the root of PlatformIO project.
 2. Add the following line to the lib_deps option of [env:] section:
 ```
-aniket-hpp/TFT_eSPI_Scroll@^1.0.1
+xunicatt/TFT_eSPI_Scroll@^1.0.1
 ```
 3. Build a project, PlatformIO will automatically install dependencies.
+
+### Arduino:
+1. Open the Arduino IDE.
+2. With the editor open, let's take a look at the left column. Here, we can see a couple of icons. Let's click the on the "library" icon.
+3. A list will now appear of all available libraries, search for `TFT_eSPI_Scroll`. 
+4. Select a version and Click Install.
 
 # Include
 
@@ -96,4 +103,4 @@ scroll.reset();
 ```
 
 # Version
->1.0.3
+>1.0.4

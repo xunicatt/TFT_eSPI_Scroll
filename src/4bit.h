@@ -1,6 +1,6 @@
 /*
 **  Author: Aniket Biswas
-**  Github: https://github.com/aniket-hpp
+**  Github: https://github.com/xunicatt
 **  
 **  4Bit color 
 **
