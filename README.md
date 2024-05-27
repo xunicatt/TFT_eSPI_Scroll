@@ -1,5 +1,5 @@
 # TFT_eSPI_Scroll
-TFT_eSPI_Scroll library adds text scroll functionality to the existing [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI/) library. This library by default uses 1-bit color-depth which makes it perform very fast & flickerless with very minimum ram usages. The color-depth can be changed accordingly to match required performances. This library supports all the processors that [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI/) library supports.
+TFT_eSPI_Scroll library adds text scroll functionality to the existing [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI/) library. This library by default uses 1-bit color-depth which makes it perform very fast & flickerless with very minimum ram usages. The color-depth can be changed accordingly to match required performances. This library supports all the processors that [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI/) library supports. Available in [PlatformIO Registry](https://registry.platformio.org/libraries/xunicatt/TFT_eSPI_Scroll) and [Arduino Library Manager](https://www.arduino.cc/reference/en/libraries/tft_espi_scroll/).
 
 # Installation
 
