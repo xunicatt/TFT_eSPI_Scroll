@@ -9,7 +9,8 @@
 
 #include <Arduino.h>
 #include <TFT_eSPI.h>
-#include "./TFT_eSPI_Scroll.h"
+#include "1bit.h"
+#include "TFT_eSPI_Scroll.h"
 
 // Constructor
 TFT_eSPI_Scroll::TFT_eSPI_Scroll(){
