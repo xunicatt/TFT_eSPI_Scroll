@@ -20,7 +20,7 @@
 #include <TFT_eSPI.h>
 #include <vector>
 
-#define TFT_eSPI_Scroll_Version "1.0.5"
+#define TFT_eSPI_Scroll_Version "1.0.6"
 
 /*
 **  Error Handeling
